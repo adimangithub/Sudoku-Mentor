@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f3b63, #071326 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+}
+
+.subtitle {
+  color: #d8e0ee;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(9, 48px);
+  grid-template-rows: repeat(9, 48px);
+  margin: 0 auto 28px;
+  width: fit-content;
+  border: 4px solid #06152d;
+  border-radius: 28px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.08),
+              0 25px 50px rgba(0,0,0,0.4);
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 600;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  color: #111;
+  background: #fff;
+}
+
+.cell.given {
+  background: #eef2f7;
+  color: #071326;
+  font-weight: 700;
+}
+
+.cell.hint-cell {
+  background: #fff3b0;
+  box-shadow: inset 0 0 0 3px #facc15;
+}
+
+.error {
+  color: #ffb4b4 !important;
+}
+
+.success {
+  color: #b7ffcf !important;
+}
+
+.cell:focus {
+  background: #eaf2ff;
+}
+
+.cell:nth-child(3n) {
+  border-right: 4px solid #06152d;
+}
+
+.cell:nth-child(9n) {
+  border-right: none;
+}
+
+.cell:nth-child(n + 19):nth-child(-n + 27),
+.cell:nth-child(n + 46):nth-child(-n + 54) {
+  border-bottom: 4px solid #06152d;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 16px 28px;
+  margin: 8px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(10, 22, 42, 0.85);
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: 0.2s;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  background: rgba(38, 80, 150, 0.9);
+}
+
+button:disabled {
+  background: rgba(160, 170, 185, 0.45);
+  cursor: not-allowed;
+}
+
+#solve {
+  background: #1e4fa3;
+}
+
+#message {
+  margin: 20px auto 0;
+  width: fit-content;
+  max-width: 650px;
+  padding: 16px 24px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #e8eefc;
+  font-weight: 500;
+}
+

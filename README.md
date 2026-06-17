@@ -1,4 +1,4 @@
-# Sudoku Mentor
+S# Sudoku Mentor
 
 Sudoku Mentor is an interactive Sudoku-solving web application that helps users solve puzzles through progressive hints, validation, and intelligent solving algorithms.
 
@@ -6,7 +6,7 @@ Sudoku Mentor is an interactive Sudoku-solving web application that helps users 
 
 ## Live Demo
 
-[Try Sudoku Mentor!!](https://adimangithub.github.io/sudoku-mentor/)
+[Try Sudoku Mentor!!](https://adimangithub.github.io/Sudoku-Mentor/)
 
 ---
 

@@ -1,4 +1,4 @@
-S# Sudoku Mentor
+# Sudoku Mentor
 
 Sudoku Mentor is an interactive Sudoku-solving web application that helps users solve puzzles through progressive hints, validation, and intelligent solving algorithms.
 
